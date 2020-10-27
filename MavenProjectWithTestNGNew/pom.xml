@@ -81,7 +81,7 @@
         		<suiteXmlFile>testng.xml</suiteXmlFile>
         	</suiteXmlFiles>
         	<systemPropertyVariables>
-                  <Browsername>**%Browsername%**</Browsername>
+                  <Browsername>%Browsername%</Browsername>
              </systemPropertyVariables>
 <!--         	 <testFailureIgnore>true</testFailureIgnore> -->
         </configuration>
