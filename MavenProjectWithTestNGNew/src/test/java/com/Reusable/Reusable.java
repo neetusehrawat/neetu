@@ -36,12 +36,13 @@ public class Reusable extends ExtentCustomizedReports  {
 	@BeforeTest(groups={"regression","smoke"})
 	 public static void launchBrowser() throws IOException {
 		test=report.startTest("Automation Practice");
-		 String browser =System.getProperty("Browsername");
+		 //String browser =System.getProperty("Browsername");
+		 String browser="";
 		 String url="";
 		 try {
 		 
 			 ReuseProperties prop= new ReuseProperties(System.getProperty("user.dir") +"\\config.properties");
-//			 browser=prop.getProperty("browser");
+     		 browser=prop.getProperty("browser");
 			 url=prop.getProperty("url");
 			 System.out.println(browser);
 			 
